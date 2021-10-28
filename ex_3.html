@@ -8,11 +8,13 @@
     <script>
 
         var almocoTotal = parseFloat(prompt('Digite o valor total do almoço: '))
-        var pctGarcom = almocoTotal * 0.13
-        var total = pctGarcom + almocoTotal
+        var pctGarcom = almocoTotal * 0.13 // Cálculo dos 13% do Garçom
+        var total = pctGarcom + almocoTotal // Total a pagar
         
-        alert(total)
+        alert('Total do graçom: R$'+pctGarcom) // Mostar o total do Garçom
+        alert('Total a pagar: R$'+total) // Mostrar o total a pagar
 
+        // Existe também a função "toFixed()", que formata um número utilizando notação de ponto fixo.
     </script>
 </head>
 <body>
