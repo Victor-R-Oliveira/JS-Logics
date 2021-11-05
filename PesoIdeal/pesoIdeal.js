@@ -27,4 +27,5 @@ var btn = document.querySelector("#btnLimpar")
 btn.addEventListener('click', function(){
     alert("A página foi recarregada com sucesso!")
     document.location.reload()
+    
 })
