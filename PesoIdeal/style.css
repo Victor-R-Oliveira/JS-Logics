@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.form-control {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
