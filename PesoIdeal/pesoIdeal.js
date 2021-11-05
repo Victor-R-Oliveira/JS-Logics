@@ -8,10 +8,16 @@ btnCalcular.addEventListener('click', function () { // Clicar no botão "Calcula
      sexoMasculino
 
      // Condições
-     if(sexoMasculino.checked){
+     radio = document.getElementsByClassName('form-check-input') // Captura do form-check do sexo
+     if(radio.checked){
         fatorPeso = 22
      } else {
         fatorPeso = 21
+     }
+     
+     // Condição para caso o usuário não selecionar seu sexo
+     if(typeof(radio.value) === undefined) {
+        alert("Selecione o sexo!")
      }
 
      // Efetua o cálculo
@@ -26,6 +32,8 @@ btnCalcular.addEventListener('click', function () { // Clicar no botão "Calcula
      // Mostra do resultado do cálculo
      mostrarPeso.innerHTML = `
         <p>Olá, ${formNome}, seu peso ideal é ${pesoFinal}KG.</p>`
+        
+    console.log(radio.value)
 })
 
 // Função "reload page" no botão limpar
