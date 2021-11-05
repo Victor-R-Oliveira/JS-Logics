@@ -25,7 +25,7 @@ btnCalcular.addEventListener('click', function () { // Clicar no botão "Calcula
 
      // Mostra do resultado do cálculo
      mostrarPeso.innerHTML = `
-        <p>Olá, ${formNome}, seu peso ideal é ${pesoFinal}.</p>`
+        <p>Olá, ${formNome}, seu peso ideal é ${pesoFinal}KG.</p>`
 })
 
 // Função "reload page" no botão limpar
