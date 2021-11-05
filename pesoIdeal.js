@@ -3,28 +3,28 @@
 
 
 btnCalcular.addEventListener('click', function () { // Clicar no botão "Calcular" irá mostrar o peso ideal do usuário
-    formNome = nome.value
-    formAltura = altura.value
-    sexoMasculino
+     formNome = nome.value
+     formAltura = altura.value
+     sexoMasculino
 
-    // Condições
-    if(sexoMasculino.checked){
+     // Condições
+     if(sexoMasculino.checked){
         fatorPeso = 22
-    } else {
+     } else {
         fatorPeso = 21
-    }
+     }
 
-    pesoFinal = fatorPeso * Math.pow(formAltura, 2).toFixed(2)
+     pesoFinal = fatorPeso * Math.pow(formAltura, 2).toFixed(2)
 
-    // alert(pesoFinal)
+     // alert(pesoFinal)
 
-    mostrarPeso = document.getElementById('pesoIdeal')
-    mostrarPeso.innerHTML = `
+     mostrarPeso = document.getElementById('pesoIdeal')
+     mostrarPeso.innerHTML = `
         <p>Olá, ${formNome}, seu peso ideal é ${pesoFinal}.</p>`
 })
 
 var btn = document.querySelector("#btnLimpar")
 btn.addEventListener('click', function(){
     alert("A página foi recarregada com sucesso!")
-    location.reload()
+    document.location.reload()
 })
