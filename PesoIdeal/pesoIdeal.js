@@ -16,10 +16,9 @@ btnCalcular.addEventListener('click', function () { // Clicar no botão "Calcula
      }
      
      // Condição para caso o usuário não selecionar seu sexo
-     /* if(typeof(radio.value) === undefined) {
+     if(typeof(radio.value) === undefined) {
         alert("Selecione o sexo!")
      }
-     */
 
      // Efetua o cálculo
      pesoFinal = fatorPeso * Math.pow(formAltura, 2).toFixed(2)
