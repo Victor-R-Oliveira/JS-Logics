@@ -43,8 +43,7 @@ setInterval(()=> {
  * 4.7 -  Sempre que o usuario apostar limpar o campo e apontar o foco para ele
 <<<<<<< HEAD
  */
-=======
- */
+
 // -----------------------------------------------------------------------------------------------------
 
 // Propriedades do jogo
@@ -65,4 +64,3 @@ document.getElementById("apostar").addEventListener('click', function(){
         }
     }
 })
->>>>>>> 756eaf3dba2c4a9177cdd2fb59090032b85e5827
