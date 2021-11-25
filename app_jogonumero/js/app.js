@@ -41,4 +41,28 @@ setInterval(()=> {
  * 4.6.2 - Mostrar na tela no campo saidaDica o Texto " Tente um número ${dica} que o VALOR_SORTEADO"
  * 
  * 4.7 -  Sempre que o usuario apostar limpar o campo e apontar o foco para ele
+<<<<<<< HEAD
  */
+=======
+ */
+// -----------------------------------------------------------------------------------------------------
+
+// Propriedades do jogo
+var erros = []
+const valorSorteado = Math.trunc(Math.random()*60+1)
+const chances = 6
+
+// Iden
+document.getElementById("apostar").addEventListener('click', function(){
+    var aposta = document.getElementById("numero").value;
+    if(aposta <= 0 && aposta > 60){
+        alert('Informe um número válido!')
+    }else{
+        if(aposta == valorSorteado){
+            alert("Você acertou!");
+        }else{
+            alert("Você perdeu!");
+        }
+    }
+})
+>>>>>>> 756eaf3dba2c4a9177cdd2fb59090032b85e5827
